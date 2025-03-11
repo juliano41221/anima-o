@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animação</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: animacao 2s alternate infinite;  
+            position: relative;
+        }
+        @keyframes animacao{
+            0%{
+               background-color: red; top:-100px; left: -100px;
+            }
+            25%{
+                background-color: yellow; top: 100px; left: -100px;
+            }
+            50%{
+                background-color: blue; top: 100px; left: 100px;
+            }
+            75%{
+                background-color: pink; top: -100px; left: 100px;
+            }
+            100%{
+                background-color: green; top: -100px; left: -100px;
+            }
+            
+        }
+        </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">Animação</div>
 </body>
 </html>
